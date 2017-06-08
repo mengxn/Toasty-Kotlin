@@ -17,8 +17,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        findViewById(R.id.button_error_toast).setOnClickListener { toast.error(this, "Success!") }
-        findViewById(R.id.button_success_toast).setOnClickListener { toast.success(this, "Success!") }
+        findViewById(R.id.button_error_toast).setOnClickListener { toast.error(this, "this is an error toast") }
+        findViewById(R.id.button_success_toast).setOnClickListener { toast.success(this, "this is an error toast") }
         findViewById(R.id.button_info_toast).setOnClickListener { toast.info(this, "Here is some info for you.") }
         findViewById(R.id.button_warning_toast).setOnClickListener { toast.warning(this, "Beware of the dog.") }
         findViewById(R.id.button_normal_toast_wo_icon).setOnClickListener { toast.normal(this, "Normal toast w/o icon") }
